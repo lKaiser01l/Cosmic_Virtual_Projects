@@ -1,0 +1,48 @@
+---
+---
+
+<header id="main-header" class="fixed top-0 left-0 w-full z-50 border-b border-white/5 transition-all duration-300 bg-transparent">
+  <div class="container mx-auto px-6 max-w-7xl h-24 flex items-center justify-between transition-all duration-300" id="header-container">
+    
+    <a href="/" class="flex items-center gap-3 group">
+      
+      <span class="text-white text-sm font-bold uppercase tracking-[0.3em]">Yaan Soluciones</span>
+    </a>
+
+    <div class="flex items-center gap-12">
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em]">
+          <li><a href="#inicio" class="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
+          <li><a href="#servicios" class="text-gray-400 hover:text-white transition-colors">Servicios</a></li>
+          
+        </ul>
+      </nav>
+
+      <a href="#contactanos" class="text-[11px] font-bold uppercase tracking-[0.2em] text-white border border-white/20 px-7 py-3 rounded-md hover:bg-white hover:text-black transition-all duration-300">
+        Contactanos
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById('main-header');
+  const container = document.getElementById('header-container');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      // Al hacer scroll: fondo oscuro translúcido y se vuelve más bajo
+      header.classList.add('bg-black/80', 'backdrop-blur-md');
+      header.classList.remove('bg-transparent');
+      container.classList.add('h-20');
+      container.classList.remove('h-24');
+    } else {
+      // Al estar arriba: totalmente transparente y más alto
+      header.classList.remove('bg-black/80', 'backdrop-blur-md');
+      header.classList.add('bg-transparent');
+      container.classList.add('h-24');
+      container.classList.remove('h-20');
+    }
+  });
+</script>

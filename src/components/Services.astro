@@ -1,0 +1,55 @@
+---
+import ServiceCard from './ServiceCards.astro';
+---
+
+<section id="servicios" class="py-24 relative">
+  
+  <div class="container mx-auto px-6 relative z-10">
+    
+    <div class="mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white uppercase tracking-tight">Nuestros servicios</h2>
+      <p class="text-gray-500 max-w-xl text-lg">
+        Ofrecemos soluciones completas de realidad virtual para impulsar tu negocio.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:grid-rows-3">
+      <div class="md:col-span-2 md:row-span-1">
+        <ServiceCard 
+          number="01" 
+          category="Entornos 360°"
+          title="Módulos VR Personalizados" 
+          description="Desarrollamos experiencias de realidad virtual a medida para tus necesidades específicas, desde entrenamiento hasta visualización de productos."
+        />
+      </div>
+
+      <div class="md:col-start-1 md:row-start-2 md:row-span-2">
+        <ServiceCard 
+          number="02" 
+          category="Entornos realistas"
+          title="Capacitación Inmersiva" 
+          description="Soluciones de entrenamiento en VR que mejoran la retención hasta un 75% y reducen costos operativos significativamente."
+        />
+      </div>
+
+      <div class="md:col-start-2 md:row-start-2 md:row-span-1">
+        <ServiceCard 
+          number="03" 
+          category="Optimizacion realista"
+          title="Integración Empresarial" 
+          description="Integramos módulos VR en tus sistemas existentes para optimizar procesos, mejorar la productividad y reducir errores."
+        />
+      </div>
+
+      <div class="md:col-start-2 md:row-start-3 md:row-span-1">
+        <ServiceCard 
+          number="04" 
+          category="Comunicación digital"
+          title="Experiencias Globales" 
+          description="Entornos virtuales multi-usuario para colaboración remota, eventos internacionales y presentaciones corporativas."
+        />
+      </div>
+    </div>
+
+  </div>
+</section>

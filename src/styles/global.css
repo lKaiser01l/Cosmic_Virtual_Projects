@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #050505;
+  --color-primary: #a855f7;
+  --color-secondary: #3b82f6;
+}
+
+/* Esto asegura que el body siempre sea negro */
+@layer base {
+  body {
+    @apply bg-dark text-white;
+    background-color: #050505;
+  }
+}

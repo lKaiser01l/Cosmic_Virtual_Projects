@@ -5,8 +5,7 @@
   <div class="container mx-auto px-6 max-w-7xl h-24 flex items-center justify-between transition-all duration-300" id="header-container">
     
     <a href="/" class="flex items-center gap-3 group">
-      
-      <span class="text-white text-sm font-bold uppercase tracking-[0.3em]">Yaan Soluciones</span>
+      <span class="text-white text-sm font-bold uppercase tracking-[0.3em]">Cosmic Virtual Projects</span>
     </a>
 
     <div class="flex items-center gap-12">
@@ -32,17 +31,17 @@
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      // Al hacer scroll: fondo oscuro translúcido y se vuelve más bajo
-      header.classList.add('bg-black/80', 'backdrop-blur-md');
-      header.classList.remove('bg-transparent');
-      container.classList.add('h-20');
-      container.classList.remove('h-24');
+      
+      header?.classList.add('bg-black/80', 'backdrop-blur-md');
+      header?.classList.remove('bg-transparent');
+      container?.classList.add('h-20');
+      container?.classList.remove('h-24');
     } else {
-      // Al estar arriba: totalmente transparente y más alto
-      header.classList.remove('bg-black/80', 'backdrop-blur-md');
-      header.classList.add('bg-transparent');
-      container.classList.add('h-24');
-      container.classList.remove('h-20');
+      
+      header?.classList.remove('bg-black/80', 'backdrop-blur-md');
+      header?.classList.add('bg-transparent');
+      container?.classList.add('h-24');
+      container?.classList.remove('h-20');
     }
   });
 </script>

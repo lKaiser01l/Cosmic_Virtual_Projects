@@ -6,7 +6,7 @@
   --color-secondary: #3b82f6;
 }
 
-/* Esto asegura que el body siempre sea negro */
+
 @layer base {
   body {
     @apply bg-dark text-white;

@@ -7,6 +7,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://cosmicvirtualprojects.com/',
   base: '/',
+  devToolbar: {
+    enabled: false,
+  },
 
   vite: {
     plugins: [tailwindcss()]

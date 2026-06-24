@@ -41,27 +41,27 @@ const contactInfo = [
           
           <div class="flex flex-col gap-2">
             <label class="text-[10px] font-bold text-gray-500 uppercase tracking-[0.2em] ml-1">Nombre</label>
-            <input name="Persona" type="text" placeholder="Tu nombre" class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500/50 transition-all text-sm" />
+            <input name="Persona" type="text" maxlength="30" placeholder="Tu nombre" class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500/50 transition-all text-sm" />
           </div>
 
           <div class="flex flex-col gap-2">
             <label class="text-[10px] font-bold text-gray-500 uppercase tracking-[0.2em] ml-1">Email</label>
-            <input name="email" type="email" placeholder="correo@empresa.com" class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500/50 transition-all text-sm" />
+            <input name="email" type="email" maxlength="35" placeholder="correo@empresa.com" class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500/50 transition-all text-sm" />
           </div>
 
           <div class="flex flex-col gap-2">
             <label class="text-[10px] font-bold text-gray-500 uppercase tracking-[0.2em] ml-1">Teléfono</label>
-            <input name="telefono" type="tel" placeholder="+51 000 000 000" class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500/50 transition-all text-sm" />
+            <input name="telefono" type="tel" maxlength="15" placeholder="+51 000 000 000" class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500/50 transition-all text-sm" />
           </div>
 
           <div class="flex flex-col gap-2">
             <label class="text-[10px] font-bold text-gray-500 uppercase tracking-[0.2em] ml-1">Empresa</label>
-            <input name="empresa" type="text" placeholder="Nombre de tu empresa" class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500/50 transition-all text-sm" />
+            <input name="empresa" type="text" maxlength="40" placeholder="Nombre de tu empresa" class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500/50 transition-all text-sm" />
           </div>
 
           <div class="flex flex-col gap-2 md:col-span-2">
             <label class="text-[10px] font-bold text-gray-500 uppercase tracking-[0.2em] ml-1">Cuéntanos sobre tu proyecto</label>
-            <textarea name="message" rows="4" placeholder="Descríbenos tu proyecto y objetivos, y te mostraremos cómo podemos ayudarte a lograr mejores resultados..." class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/20 transition-all resize-none text-sm"></textarea>
+            <textarea name="message" rows="4" maxlength="500" placeholder="Descríbenos tu proyecto y objetivos, y te mostraremos cómo podemos ayudarte a lograr mejores resultados..." class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/20 transition-all resize-none text-sm"></textarea>
           </div>
 
           <div class="md:col-span-2 mt-4">
